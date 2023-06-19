@@ -3,9 +3,28 @@
 @import './reset';
 @import './colors';
 @import './media';
+@import './header';
 
 :root {
+    font-family: 'Plus Jakarta Sans', sans-serif;;
     font-size: 16px;
+    font-weight: 500;
+}
+
+body {
+    margin: 24px 16px;
+}
+
+h1 {
+    display: inline;
+    font-size: 20px;
+    font-weight: 800;
+    color: $veryDarkGrayishBlue;
+}
+
+p {
+    font-size: 14px;
+    color: $darkGrayishBlue
 }
 
 

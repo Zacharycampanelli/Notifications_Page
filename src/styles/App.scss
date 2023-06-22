@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
 
 @import './reset';
 @import './colors';
 @import './media';
 @import './header';
+@import './notification';
 
 :root {
     font-family: 'Plus Jakarta Sans', sans-serif;;
@@ -20,6 +21,12 @@ h1 {
     font-size: 20px;
     font-weight: 800;
     color: $veryDarkGrayishBlue;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 800;
+    color: $veryDarkGrayishBlue
 }
 
 p {

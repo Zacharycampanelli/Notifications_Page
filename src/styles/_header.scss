@@ -1,16 +1,16 @@
 header {
-    display: flex;
-    justify-content: space-between;
-   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    .total {
-        display: inline;
-        margin-left: 10px;
-        padding: 2px 12px;
-        border-radius: 6px;
-        background-color: $blue;
-        font-size: 16px;
-        font-weight: 800;
-        color: $white;
-    }
+  .total {
+    display: inline;
+    margin-left: 10px;
+    padding: 2px 12px;
+    border-radius: 6px;
+    background-color: $blue;
+    font-size: 16px;
+    font-weight: 800;
+    color: $white;
+  }
 }

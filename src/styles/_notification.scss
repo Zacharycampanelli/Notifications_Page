@@ -1,0 +1,52 @@
+.message-board {
+    margin-top: 40px;
+}
+
+.notification {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: 16px 22px;
+    width: fit-content;
+    border-radius: 8px;
+    
+    h2, p {
+        display: inline;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 13px;
+        
+        &-content {
+            padding-bottom: 3px;    
+
+            .post-topic {
+                font-weight: 700;
+                color: $darkGrayishBlue
+            }
+        }
+        &-time {
+            color: $grayishBlue;
+
+            
+        }
+    }
+}
+
+.unread {
+    background: $veryLighGrayishBlue;
+    .info-content{
+
+        p::after {
+            content: '\2022';
+            color: red;
+        }
+    }
+}

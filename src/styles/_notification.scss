@@ -4,19 +4,27 @@
 
 .notification {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     // align-items: center;
-    padding: 16px 22px;
-    width: fit-content;
+    padding: 16px 18px;
+    margin: 10px 0;
+    width: 92vw;
     border-radius: 8px;
     
     h2, p {
         display: inline;
     }
 
+    h2 {
+        margin-right: 3px;
+    }
+
     .icon {
+        margin-right: 13px;
         width: 40px;
         height: 40px;
+
+
     }
     
     .info {
@@ -45,7 +53,7 @@
     .info-content{
 
         p::after {
-            content: '\2022';
+            content: '\200A' ' \2022';
             color: red;
         }
     }

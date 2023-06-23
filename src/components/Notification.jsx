@@ -4,30 +4,25 @@ import Group from "./NotificationTypes/Group";
 import Message from "./NotificationTypes/Message";
 import Reaction from "./NotificationTypes/Reaction";
 
-const Notification = ({notification}) => {
+const Notification = ({notification, image }) => {
 
   const typeOfNotification = (notification) => {
     switch (notification.type) {
       case 'reaction':
-        return <Reaction userData={notification} />;
+        return <Reaction userData={notification} image={image} />;
       case 'follow':
-        return <Follow userData={notification} />
+        return <Follow userData={notification} image={image} />
       case 'group':
-        return <Group userData={notification} />
+        return <Group userData={notification} image={image} />
       case 'message':
-        return <Message userData={notification} />
+        return <Message userData={notification} image={image} />
       case 'comment':
-        return <Comment userData={notification} />
+        return <Comment userData={notification} image={image} />
     }
 
   }
-//   reaction
-// follow
-// group
-// message
-// comment
 
-console.log(notification.type)
+
   return (
     <div className={`notification ${notification.new === true ? `unread` : '' }`} >
      

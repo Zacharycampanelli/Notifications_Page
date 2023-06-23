@@ -1,9 +1,10 @@
 import temp from '../../assets/images/avatar-angela-gray.webp';
 
-const Follow = ({ userData }) => {
+const Follow = ({ userData, image }) => {
+  console.log(image)
   return (
     <>
-      <img src={temp} className="icon" />
+      <img src={image} className="icon" />
       <div className="info">
         <div className="info-content">
           <h2>{userData.data.user}</h2>

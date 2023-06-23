@@ -12,8 +12,16 @@ const Message = ({ userData }) => {
           sent you a private message <span className="post-topic">{userData.data.post}</span>
         </p>
       </div>
-      <div className="info-time"></div>
+      <div className="info-time">
+
       <p>{userData.data.time} ago</p>
+      </div>
+      <div className="info-message">
+
+        <p>
+          {userData.data.message}
+        </p>
+      </div>
     </div>
   </>
   )

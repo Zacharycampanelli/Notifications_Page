@@ -1,60 +1,62 @@
 .message-board {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .notification {
+  display: flex;
+  justify-content: flex-start;
+  // align-items: center;
+  padding: 16px 18px;
+  margin: 10px 0;
+  width: 92vw;
+  border-radius: 8px;
+
+  h2,
+  p {
+    display: inline;
+  }
+
+  h2 {
+    margin-right: 3px;
+  }
+
+  .icon {
+    margin-right: 13px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .info {
     display: flex;
-    justify-content: flex-start;
-    // align-items: center;
-    padding: 16px 18px;
-    margin: 10px 0;
-    width: 92vw;
-    border-radius: 8px;
-    
-    h2, p {
-        display: inline;
+    flex-direction: column;
+    padding-left: 13px;
+
+    &-content {
+      padding-bottom: 3px;
+
+      .post-topic {
+        font-weight: 700;
+        color: $darkGrayishBlue;
+      }
     }
-
-    h2 {
-        margin-right: 3px;
+    &-time {
+      color: $grayishBlue;
     }
-
-    .icon {
-        margin-right: 13px;
-        width: 40px;
-        height: 40px;
-
-
+    &-message {
+        align-self: flex-end;
+        margin: 14px 0;
+        padding: 14px;
+        border: 1px solid $lightGrayishBlue-2;
     }
-    
-    .info {
-        display: flex;
-        flex-direction: column;
-        padding-left: 13px;
-        
-        &-content {
-            padding-bottom: 3px;    
-
-            .post-topic {
-                font-weight: 700;
-                color: $darkGrayishBlue
-            }
-        }
-        &-time {
-            color: $grayishBlue;
-
-            
-        }
-    }
+  }
 }
 
 .unread {
-    background: $veryLighGrayishBlue;
-    .info-content{
-
-        p::after {
-            content: '\200A' ' \2022';
-            color: red;
-        }
+  background: $veryLighGrayishBlue;
+  .info-content {
+    p::after {
+      content: '\200A'' \2022';
+      color: red;
     }
+  }
 }

@@ -12,8 +12,10 @@ const Reaction = ({ userData }) => {
             reacted to your recent post <span className="post-topic">{userData.data.post}</span>
           </p>
         </div>
-        <div className="info-time"></div>
+        <div className="info-time">
+
         <p>{userData.data.time} ago</p>
+        </div>
       </div>
     </>
   );

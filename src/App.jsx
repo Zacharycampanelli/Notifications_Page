@@ -10,10 +10,10 @@ import './styles/App.scss'
 function App() {
 
   return (
-    <>
+    <div className='container'>
       <Header />
       <MessageBoard notifications={notifications} />
-    </>
+    </div>
   )
 }
 

@@ -1,5 +1,3 @@
-import temp from '../../assets/images/avatar-angela-gray.webp';
-
 const Reaction = ({ userData, image }) => {
   return (
     <>
@@ -13,8 +11,7 @@ const Reaction = ({ userData, image }) => {
           </p>
         </div>
         <div className="info-time">
-
-        <p>{userData.data.time} ago</p>
+          <p>{userData.data.time} ago</p>
         </div>
       </div>
     </>

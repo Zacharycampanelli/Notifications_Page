@@ -10,10 +10,16 @@
     font-family: 'Plus Jakarta Sans', sans-serif;;
     font-size: 16px;
     font-weight: 500;
+
 }
+
 
 body {
     margin: 24px 16px;
+
+    @include min-width(large) {
+        background: $veryLighGrayishBlue;
+    }
 }
 
 h1 {
@@ -21,17 +27,39 @@ h1 {
     font-size: 20px;
     font-weight: 800;
     color: $veryDarkGrayishBlue;
+
+    @include min-width(large) {
+        font-size: 24px;
+    }
 }
 
 h2 {
     font-size: 14px;
     font-weight: 800;
-    color: $veryDarkGrayishBlue
+    color: $veryDarkGrayishBlue;
+    
+    @include min-width(large) {
+        font-size: 16px;
+    }
 }
 
 p {
     font-size: 14px;
-    color: $darkGrayishBlue
+    color: $darkGrayishBlue;
+
+    @include min-width(large) {
+        font-size: 16px;
+    }
+}
+
+.container {
+    @include min-width(large) {
+
+        margin: 62px auto;
+        padding: 33px;
+        width: 48vw;
+        background: $white;
+    }
 }
 
 

@@ -4,10 +4,10 @@ const Reaction = ({ userData, image }) => {
       <img src={image} className="icon" />
       <div className="info">
         <div className="info-content">
-          <h2>{userData.data.user}</h2>
+          <a href="#"><h2>{userData.data.user}</h2></a>
           <p>
             {' '}
-            reacted to your recent post <span className="post-topic">{userData.data.post}</span>
+            reacted to your recent post <a href="#"><span className="post-topic">{userData.data.post}</span></a>
           </p>
         </div>
         <div className="info-time">

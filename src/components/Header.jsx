@@ -5,7 +5,7 @@ const Header = () => {
         <h1>Notifications</h1>
         <div className="total">3</div>
       </div>
-      <p>Mark all as read</p>
+      <button type="button">Mark all as read</button>
     </header>
   );
 };

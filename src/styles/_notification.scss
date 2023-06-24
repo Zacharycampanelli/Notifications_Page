@@ -55,6 +55,11 @@
         font-weight: 700;
         color: $darkGrayishBlue;
       }
+
+      .post-topic:hover {
+        color: $blue;
+        cursor: pointer;
+      }
     }
     &-time {
        
@@ -65,8 +70,11 @@
         padding: 14px;
         width: 95%;
         border: 1px solid $lightGrayishBlue-2;
+    }
 
-    
+    &-message:hover {
+        background: $veryLighGrayishBlue;
+        cursor: pointer;
     }
 
   }

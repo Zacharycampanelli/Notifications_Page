@@ -6,10 +6,9 @@ const Group = ({ userData, image }) => {
       <img src={image} className="icon" />
       <div className="info">
         <div className="info-content">
-          <h2>{userData.data.user}</h2>
-          <p>
+        <a href="#"><h2>{userData.data.user}</h2></a>          <p>
             {' '}
-            has {action} {action === 'joined' ? 'your' : 'the'} group <span className="post-topic">{userData.data.groupName}</span>
+            has {action} {action === 'joined' ? 'your' : 'the'} group <a href="#"><span className="post-topic">{userData.data.groupName}</span></a>
           </p>
         </div>
         <div className="info-time">

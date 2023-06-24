@@ -4,8 +4,7 @@ const Message = ({ userData, image }) => {
       <img src={image} className="icon" />
       <div className="info">
         <div className="info-content">
-          <h2>{userData.data.user}</h2>
-          <p>
+        <a href="#"><h2>{userData.data.user}</h2></a>          <p>
             {' '}
             sent you a private message <span className="post-topic">{userData.data.post}</span>
           </p>

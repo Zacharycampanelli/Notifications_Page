@@ -25,7 +25,6 @@
   }
 
   .icon {
-    margin-right: +px;
     width: 40px;
     height: 40px;
   }
@@ -36,7 +35,6 @@
 
         display: flex;
         justify-items: flex-start;
-        width: 100%;
     }
   }
 
@@ -47,7 +45,7 @@
     max-width: 84%;
 
     @include min-width(large) {
-        width: 80%;
+        width: 83%;
     }
 
     &-content {

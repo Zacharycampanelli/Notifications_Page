@@ -1,4 +1,4 @@
-export const notifications = [{
+export const notificationData = [{
     type: 'reaction',
     data: {
       user: 'Mark Webber',

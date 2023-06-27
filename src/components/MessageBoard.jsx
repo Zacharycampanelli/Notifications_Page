@@ -1,3 +1,5 @@
+import { useEffect } from "react"
+
 import Notification from "./Notification"
 
 import angela from '../assets/images/avatar-angela-gray.webp'
@@ -10,13 +12,18 @@ import rizky from '../assets/images/avatar-rizky-hasanuddin.webp'
 
 const avatars = [mark, angela, jacob, rizky, kimberly, nathan, anna];
 
-const MessageBoard = ({ notifications }) => {
+const MessageBoard = ({ number, setNumber, notifications, setNotifications } ) => {
+    useEffect(() => {
+
+      notifications.map((item) => item.new === true && setNumber((number) => number + 1));
+    }, [notifications]);
+
 
   return (
     <div className="message-board">
       {
         notifications.map((note, i) => (
-             <Notification notification={note} image={avatars[i]} key={note} />
+             <Notification notifications={notifications} setNotifications={setNotifications} notification={note} image={avatars[i]} key={note} setNumber={setNumber} number={number}  />
         )
         )
 

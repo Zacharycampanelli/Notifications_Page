@@ -1,10 +1,12 @@
+import { useState } from "react";
 import Comment from "./NotificationTypes/Comment";
 import Follow from "./NotificationTypes/Follow";
 import Group from "./NotificationTypes/Group";
 import Message from "./NotificationTypes/Message";
 import Reaction from "./NotificationTypes/Reaction";
 
-const Notification = ({notification, image }) => {
+const Notification = ({notifications, setNotifications, notification, image, setNumber, number }) => {
+  const [isNew, setIsNew] = useState(notification.new)
 
   const typeOfNotification = (notification) => {
     switch (notification.type) {
@@ -22,9 +24,22 @@ const Notification = ({notification, image }) => {
 
   }
 
+  console.log(isNew, notification)
+const readNotification = () => {
+  let temp = {...notification}
+  if(isNew) {
+    temp.new = false;
+    console.log(temp)
+    setIsNew(false)
+    // setIsNew(false);
+     setNumber((prev) => prev - 1);
+    // console.log(number)
+    // setNotifications({...notifications, notification})
+  }
+}
 
   return (
-    <div className={`notification ${notification.new === true ? `unread` : '' }`} >
+    <div onClick={readNotification} className={`notification ${isNew === true ? `unread` : '' }`} >
      
      {typeOfNotification(notification )}
       {/* <img src={require(`../images/${notification.data.photo}`)} /> */}

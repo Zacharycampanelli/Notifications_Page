@@ -14,16 +14,14 @@ const avatars = [mark, angela, jacob, rizky, kimberly, nathan, anna];
 
 const MessageBoard = ({ number, setNumber, notifications, setNotifications } ) => {
     useEffect(() => {
-
       notifications.map((item) => item.new === true && setNumber((number) => number + 1));
     }, [notifications]);
-
 
   return (
     <div className="message-board">
       {
         notifications.map((note, i) => (
-             <Notification notifications={notifications} setNotifications={setNotifications} notification={note} image={avatars[i]} key={note} setNumber={setNumber} number={number}  />
+             <Notification notifications={notifications} setNotifications={setNotifications} notification={note} image={avatars[i]} key={i} setNumber={setNumber} number={number}  />
         )
         )
 

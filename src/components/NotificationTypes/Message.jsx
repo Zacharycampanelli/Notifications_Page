@@ -4,8 +4,10 @@ const Message = ({ userData, image }) => {
       <img src={image} className="icon" />
       <div className="info">
         <div className="info-content">
-        <a href="#"><h2>{userData.data.user}</h2></a>          <p>
-            {' '}
+          <a href="#">
+            <h2>{userData.data.user}</h2>
+          </a>
+          <p>
             sent you a private message <span className="post-topic">{userData.data.post}</span>
           </p>
         </div>

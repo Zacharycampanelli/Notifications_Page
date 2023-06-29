@@ -1,14 +1,13 @@
-const Header = ({ number, setNumber, notifications, setNotifications }) => {
-
-
+const Header = ({ number, setNumber, notifications, setNotifications, setClearAll }) => {
   const clearAll = () => {
-    // console.log(typeof notifications)
-    notifications.map((notification) => {
-      console.log(notifications)
-      setNotifications({...notification, new: false})})  
-    // setNumber(0);
-  }
-
+    let temp = [...notifications];
+    let arr = temp.map((item) => {
+      if (item.new === true) item.new = false;
+      return item;
+    });
+    setNotifications([...arr]);
+    setClearAll(true);
+  };
 
   return (
     <header>
@@ -16,7 +15,9 @@ const Header = ({ number, setNumber, notifications, setNotifications }) => {
         <h1>Notifications</h1>
         <div className="total">{number}</div>
       </div>
-      <button type="button" onClick={clearAll} >Mark all as read</button>
+      <button type="button" onClick={clearAll}>
+        Mark all as read
+      </button>
     </header>
   );
 };

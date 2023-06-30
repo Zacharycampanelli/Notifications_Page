@@ -4,6 +4,7 @@ import Follow from './NotificationTypes/Follow';
 import Group from './NotificationTypes/Group';
 import Message from './NotificationTypes/Message';
 import Reaction from './NotificationTypes/Reaction';
+import chess from '../assets/images/image-chess.webp';
 
 const Notification = ({ notification, image, setNumber, number, clearAll }) => {
   const [isNew, setIsNew] = useState(notification.new);
@@ -19,7 +20,7 @@ const Notification = ({ notification, image, setNumber, number, clearAll }) => {
       case 'message':
         return <Message userData={notification} image={image} />;
       case 'comment':
-        return <Comment userData={notification} image={image} />;
+        return <Comment userData={notification} image={image} secondImage={chess} />;
     }
   };
 

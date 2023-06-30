@@ -1,4 +1,4 @@
-const Comment = ({ userData, image }) => {
+const Comment = ({ userData, image, secondImage }) => {
   return (
     <>
       <img src={image} className="icon" />
@@ -15,9 +15,12 @@ const Comment = ({ userData, image }) => {
           </div>
         </div>
       </div>
-      <a href="#">
-        <img src={userData.data.imgUrl} className="photo" />
+      { 
+
+        <a href="#">
+        <img src={secondImage} className="photo" id={userData.data.user} />
       </a>
+      }
     </>
   );
 };

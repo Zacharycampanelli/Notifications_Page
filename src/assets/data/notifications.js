@@ -37,7 +37,6 @@ export const notificationData = [{
       user: 'Kimberly Smith',
       post: 'picture',
       time: '1 week',
-      imgUrl: '../../../public/image-chess.webp'
     },
     new: false
   }, {

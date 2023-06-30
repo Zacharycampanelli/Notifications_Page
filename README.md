@@ -34,7 +34,7 @@ Users should be able to:
 
 - Solution URL: [github.com/Zacharycampanelli/Notifications_Page](https://github.com/Zacharycampanelli/Notifications_Page)
 
-- Live Site URL: [zacharycampanelli.github.io/Notifications_Page](https://zacharycampanelli.github.io/Notifications_Page)
+- Live Site URL: [main--zcamp-notifications-page.netlify.app](https://main--zcamp-notifications-page.netlify.app/)
 
 ## My process
 
@@ -45,6 +45,7 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 - React
+- Netlify
 
 ## Author
 

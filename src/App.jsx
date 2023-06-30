@@ -11,7 +11,7 @@ function App() {
   const [clearAll, setClearAll] = useState(false);
 
   let count = 0;
-  
+
   useEffect(() => {
     notifications.forEach((item) => {
       if (item.new === true) {
@@ -35,6 +35,13 @@ function App() {
         setNotifications={setNotifications}
         clearAll={clearAll}
       />
+      <div className="attribution">
+        Challenge by{' '}
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">
+          Frontend Mentor
+        </a>
+        . Coded by <a href="#">Zachary Campanelli</a>.
+      </div>
     </div>
   );
 }

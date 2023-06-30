@@ -15,12 +15,9 @@ const Comment = ({ userData, image, secondImage }) => {
           </div>
         </div>
       </div>
-      { 
-
         <a href="#">
         <img src={secondImage} className="photo" id={userData.data.user} />
       </a>
-      }
     </>
   );
 };
